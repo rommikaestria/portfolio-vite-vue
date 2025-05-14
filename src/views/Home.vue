@@ -15,8 +15,8 @@
 export default {
   data() {
     return {
-      name: 'Nama Anda',
-      profession: 'Profesi Anda',
+      name: 'Rommi Kaestria',
+      profession: 'EduContent Creator',
       profilePicture: '/path/to/profile-picture.jpg',
     };
   },
