@@ -8,7 +8,6 @@
 
     <form @submit.prevent="submitForm">
       <div class="form-group">
-        <label for="name">Nama</label>
         <input
           type="text"
           id="name"
@@ -18,7 +17,6 @@
       </div>
 
       <div class="form-group">
-        <label for="email">Email</label>
         <input
           type="email"
           id="email"
@@ -28,7 +26,6 @@
       </div>
 
       <div class="form-group">
-        <label for="message">Pesan</label>
         <textarea
           id="message"
           v-model="form.message"
@@ -43,15 +40,12 @@
       <h2>Media Sosial</h2>
       <ul>
         <li>
-          <a href="https://twitter.com/username" target="_blank">Twitter</a>
-        </li>
-        <li>
-          <a href="https://linkedin.com/in/username" target="_blank"
+          <a href="https://linkedin.com/in/rommikaestria" target="_blank"
             >LinkedIn</a
           >
         </li>
         <li>
-          <a href="https://github.com/username" target="_blank">GitHub</a>
+          <a href="https://github.com/rommikaestria" target="_blank">GitHub</a>
         </li>
       </ul>
     </div>
