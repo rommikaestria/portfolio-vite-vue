@@ -1,11 +1,26 @@
 <template>
-  <header class="header">
-    <nav>
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/about">About</router-link></li>
-        <li><router-link to="/projects">Projects</router-link></li>
-        <li><router-link to="/contact">Contact</router-link></li>
+  <header class="bg-primary text-white py-3">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <h1 class="h4">Portfolio</h1>
+      <ul class="nav">
+        <li class="nav-item">
+          <router-link to="/" class="nav-link text-white">Home</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/about" class="nav-link text-white"
+            >About</router-link
+          >
+        </li>
+        <li class="nav-item">
+          <router-link to="/projects" class="nav-link text-white"
+            >Projects</router-link
+          >
+        </li>
+        <li class="nav-item">
+          <router-link to="/contact" class="nav-link text-white"
+            >Contact</router-link
+          >
+        </li>
       </ul>
     </nav>
   </header>
@@ -16,26 +31,5 @@ export default {};
 </script>
 
 <style scoped>
-.header {
-  background-color: #007bff;
-  padding: 1rem;
-  color: white;
-}
-
-.header ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
-}
-
-.header a {
-  color: white;
-  text-decoration: none;
-}
-
-.header a:hover {
-  text-decoration: underline;
-}
+/* Tambahkan gaya tambahan jika diperlukan */
 </style>
