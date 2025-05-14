@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "description": "Website portofolio pribadi menggunakan Vue.js dan Vite.",
+    "technologies": ["Vue.js", "Vite", "CSS"],
+    "link": "https://example.com/portfolio"
+  },
+  {
+    "id": 2,
+    "title": "E-commerce Platform",
+    "description": "Platform e-commerce sederhana dengan fitur keranjang belanja.",
+    "technologies": ["Vue.js", "Node.js", "MongoDB"],
+    "link": "https://example.com/ecommerce"
+  },
+  {
+    "id": 3,
+    "title": "Blog CMS",
+    "description": "Sistem manajemen konten untuk blog dengan fitur CRUD.",
+    "technologies": ["Vue.js", "Firebase"],
+    "link": "https://example.com/blog-cms"
+  }
+]
