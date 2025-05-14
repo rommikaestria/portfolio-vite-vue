@@ -2,7 +2,11 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">Portfolio</a>
+        <a class="navbar-brand text-white" href="#"
+          ><router-link to="/" class="nav-link text-white"
+            >Portfolio</router-link
+          ></a
+        >
         <button
           class="navbar-toggler"
           type="button"
