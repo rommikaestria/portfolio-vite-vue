@@ -21,8 +21,14 @@ export default {
 
 <style>
 #app {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0; /* Hapus padding untuk mengurangi jarak */
+}
+
+@media (min-width: 1200px) {
+  #app {
+    padding: 2rem; /* Tambahkan padding hanya untuk layar besar jika diperlukan */
+  }
 }
 </style>

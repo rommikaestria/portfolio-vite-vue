@@ -1,6 +1,8 @@
 <template>
   <footer class="bg-light text-center py-3">
-    <p class="mb-0">&copy; 2025 Rommi Kaestria. Semua Hak Dilindungi.</p>
+    <div class="container-fluid">
+      <p class="mb-0">&copy; 2025 Rommi Kaestria. Semua Hak Dilindungi.</p>
+    </div>
   </footer>
 </template>
 

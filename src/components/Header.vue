@@ -1,6 +1,7 @@
 <template>
   <header class="bg-primary text-white py-3">
-    <nav class="container d-flex justify-content-between align-items-center">
+    <nav
+      class="container-fluid d-flex justify-content-between align-items-center">
       <h1 class="h4">Portfolio</h1>
       <ul class="nav">
         <li class="nav-item">
@@ -31,5 +32,9 @@ export default {};
 </script>
 
 <style scoped>
-/* Tambahkan gaya tambahan jika diperlukan */
+header {
+  margin: 0; /* Pastikan margin diatur ke 0 */
+  position: relative; /* Jika diperlukan, gunakan posisi relatif */
+  top: 0; /* Pastikan header berada di bagian atas */
+}
 </style>

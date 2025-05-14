@@ -1,13 +1,12 @@
 <template>
-  <div class="container text-center py-5">
+  <div class="container-fluid text-center py-5">
     <img
-      class="rounded-circle mb-4"
+      class="rounded-circle mb-4 img-fluid"
       :src="profilePicture"
       alt="Foto Profil"
-      width="150"
-      height="150" />
-    <h1 class="display-4">{{ name }}</h1>
-    <p class="lead">{{ profession }}</p>
+      style="max-width: 200px; height: auto" />
+    <h1 class="display-3 fw-bold">{{ name }}</h1>
+    <p class="lead fs-4">{{ profession }}</p>
   </div>
 </template>
 
@@ -17,7 +16,7 @@ export default {
     return {
       name: 'Rommi Kaestria',
       profession: 'EduContent Creator',
-      profilePicture: '/path/to/profile-picture.jpg',
+      profilePicture: '/path/to/profile-picture.jpg', // Pastikan path gambar benar
     };
   },
 };
