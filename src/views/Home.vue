@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid text-center py-5">
+  <div class="container text-center py-5">
     <img
       class="rounded-circle mb-4 img-fluid"
       :src="profilePicture"
@@ -11,12 +11,14 @@
 </template>
 
 <script>
+import profilePicture from '../assets/profile-picture.png';
+
 export default {
   data() {
     return {
       name: 'Rommi Kaestria',
       profession: 'EduContent Creator',
-      profilePicture: '/path/to/profile-picture.jpg', // Pastikan path gambar benar
+      profilePicture,
     };
   },
 };
