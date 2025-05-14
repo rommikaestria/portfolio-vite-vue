@@ -1,10 +1,13 @@
 <template>
-  <div class="home">
-    <section class="intro">
-      <img class="profile-pic" :src="profilePicture" alt="Foto Profil" />
-      <h1>{{ name }}</h1>
-      <p class="profession">{{ profession }}</p>
-    </section>
+  <div class="container text-center py-5">
+    <img
+      class="rounded-circle mb-4"
+      :src="profilePicture"
+      alt="Foto Profil"
+      width="150"
+      height="150" />
+    <h1 class="display-4">{{ name }}</h1>
+    <p class="lead">{{ profession }}</p>
   </div>
 </template>
 
@@ -21,25 +24,5 @@ export default {
 </script>
 
 <style scoped>
-.home {
-  text-align: center;
-  padding: 2rem;
-}
-
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.intro h1 {
-  font-size: 2rem;
-  margin: 0.5rem 0;
-}
-
-.profession {
-  font-size: 1.2rem;
-  color: #555;
-}
+/* Tambahkan gaya tambahan jika diperlukan */
 </style>
