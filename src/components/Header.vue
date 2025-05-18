@@ -1,56 +1,91 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#"
-          ><router-link to="/" class="nav-link text-white"
-            >Portfolio</router-link
-          ></a
+    <Menubar :model="items" class="surface-0 border-none shadow-2">
+      <template #start>
+        <router-link
+          to="/"
+          class="text-xl font-bold text-primary no-underline mr-5"
+          >Portfolio</router-link
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <router-link to="/" class="nav-link text-white">Home</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/about" class="nav-link text-white"
-                >About</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link to="/projects" class="nav-link text-white"
-                >Projects</router-link
-              >
-            </li>
-            <li class="nav-item">
-              <router-link to="/contact" class="nav-link text-white"
-                >Contact</router-link
-              >
-            </li>
-          </ul>
-        </div>
+      </template>
+      <template #end>
+        <Button
+          icon="pi pi-bars"
+          @click="toggleMenu"
+          class="p-button-text p-button-rounded md:hidden" />
+      </template>
+    </Menubar>
+
+    <!-- Menu mobile -->
+    <Sidebar v-model:visible="showMenu" position="right" class="md:hidden">
+      <div class="flex flex-column gap-3 p-3">
+        <router-link
+          v-for="item in items"
+          :key="item.label"
+          :to="item.to"
+          class="no-underline">
+          <div
+            class="p-3 border-round-lg cursor-pointer hover:surface-200 flex align-items-center">
+            <i :class="item.icon" class="mr-3"></i>
+            <span class="font-medium">{{ item.label }}</span>
+          </div>
+        </router-link>
       </div>
-    </nav>
+    </Sidebar>
   </header>
 </template>
 
 <script>
-export default {};
+import Menubar from 'primevue/menubar';
+import Button from 'primevue/button';
+import Sidebar from 'primevue/sidebar';
+
+export default {
+  components: {
+    Menubar,
+    Button,
+    Sidebar,
+  },
+  data() {
+    return {
+      showMenu: false,
+      items: [
+        {
+          label: 'Home',
+          icon: 'pi pi-home',
+          to: '/',
+        },
+        {
+          label: 'About',
+          icon: 'pi pi-user',
+          to: '/about',
+        },
+        {
+          label: 'Projects',
+          icon: 'pi pi-briefcase',
+          to: '/projects',
+        },
+        {
+          label: 'Contact',
+          icon: 'pi pi-envelope',
+          to: '/contact',
+        },
+      ],
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.showMenu = !this.showMenu;
+    },
+  },
+};
 </script>
 
 <style scoped>
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+/* Sembunyikan menu icon pada layar besar */
+@media (min-width: 768px) {
+  :deep(.p-menubar-button) {
+    display: none;
+  }
 }
 </style>

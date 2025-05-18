@@ -1,8 +1,9 @@
-// filepath: d:\_Master_Js\vuejs\portfolio-vite-vue\src\App.vue
 <template>
-  <div id="app">
+  <div class="min-h-screen flex flex-column">
     <Header />
-    <router-view />
+    <div class="flex-grow-1">
+      <router-view />
+    </div>
     <Footer />
   </div>
 </template>
@@ -20,15 +21,17 @@ export default {
 </script>
 
 <style>
-#app {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0; /* Hapus padding untuk mengurangi jarak */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (min-width: 1200px) {
-  #app {
-    padding: 2rem; /* Tambahkan padding hanya untuk layar besar jika diperlukan */
-  }
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 </style>
