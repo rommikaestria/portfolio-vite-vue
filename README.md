@@ -1,6 +1,6 @@
 # Portfolio Vite Vue
 
-![Portfolio Screenshot](src/assets/profile-picture.png)
+![Portfolio Screenshot](src/assets/Tampilan-PortFolio-website.png)
 
 Selamat datang di **Portfolio Vite Vue**! 🚀  
 Proyek ini adalah portofolio pribadi yang dibangun menggunakan **Vue 3**, **Vite**, dan **Bootstrap 5**. Anda dapat menggunakan proyek ini untuk menampilkan informasi tentang diri Anda, pekerjaan, dan proyek-proyek Anda.
@@ -18,7 +18,7 @@ Proyek ini adalah portofolio pribadi yang dibangun menggunakan **Vue 3**, **Vite
 ## 📸 Tampilan Proyek
 Berikut adalah tampilan dari halaman utama proyek ini:
 
-![Tampilan Halaman Utama](src/assets/profile-picture.png)
+![Tampilan Halaman Utama](src/assets/Tampilan-PortFolio-website.png)
 
 ---
 
