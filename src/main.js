@@ -18,4 +18,9 @@ import 'primeicons/primeicons.css'; //icons
 // Import PrimeFlex
 import 'primeflex/primeflex.css'; //flex utilities
 
-createApp(App).use(router).mount('#app');
+const app = createApp(App);
+
+app.use(router);
+app.use(PrimeVue, { ripple: true });
+
+app.mount('#app');
