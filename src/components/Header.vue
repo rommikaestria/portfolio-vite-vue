@@ -53,22 +53,22 @@ export default {
         {
           label: 'Home',
           icon: 'pi pi-home',
-          to: '/', // path sudah benar
+          command: () => this.$router.push('/'),
         },
         {
           label: 'About',
           icon: 'pi pi-user',
-          to: '/about', // hapus ekstensi .vue
+          command: () => this.$router.push('/about'),
         },
         {
           label: 'Projects',
           icon: 'pi pi-briefcase',
-          to: '/projects', // hapus ekstensi .vue
+          command: () => this.$router.push('/projects'),
         },
         {
           label: 'Contact',
           icon: 'pi pi-envelope',
-          to: '/contact', // hapus ekstensi .vue
+          command: () => this.$router.push('/contact'),
         },
       ],
     };
@@ -87,5 +87,10 @@ export default {
   :deep(.p-menubar-button) {
     display: none;
   }
+}
+
+/* Add this to ensure the menubar items are clickable */
+:deep(.p-menuitem-content) {
+  cursor: pointer;
 }
 </style>
