@@ -53,22 +53,22 @@ export default {
         {
           label: 'Home',
           icon: 'pi pi-home',
-          to: '/',
+          to: '/', // path sudah benar
         },
         {
           label: 'About',
           icon: 'pi pi-user',
-          to: '/about',
+          to: '/about', // hapus ekstensi .vue
         },
         {
           label: 'Projects',
           icon: 'pi pi-briefcase',
-          to: '/projects',
+          to: '/projects', // hapus ekstensi .vue
         },
         {
           label: 'Contact',
           icon: 'pi pi-envelope',
-          to: '/contact',
+          to: '/contact', // hapus ekstensi .vue
         },
       ],
     };
